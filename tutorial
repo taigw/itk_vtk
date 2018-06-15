@@ -1,0 +1,25 @@
+1, install cmake for linux
+sudo apt-get install cmake-curses-gui
+
+warning: 'ldconfig' not found in PATH or not executable
+Just prefix the sudo call with the redefinition of the PATH variable:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin 
+
+2, install pyqt via conda
+install conda with python 3.6
+conda uninstall pyqt
+conda install pyqt=4
+
+3, build vtk 7.1.1
+install path: /home/guotai/install
+set the following environment variables
+
+export PATH="/home/guotai/install/bin:$PATH"
+export LD_LIBRARY_PATH="/home/guotai/install/lib:$LD_LIBRARY_PATH"
+export PYTHONPATH="/home/guotai/install/lib/python2.7/site-packages/vtk/:$PYTHONPATH"
+
+
+4, build qt (optional)
+install place:  /usr/local/Trolltech/Qt-4.8.7/
+
+5, instal nibabel, scikit-image
